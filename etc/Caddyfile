@@ -11,10 +11,6 @@ header {
 
 redir https://cloudflare.com{uri}
 
-basicauth /$AUUID/* {
-    $AUUID $MYUUID-HASH
-}
-
 @websocket_xray_vmess {
 header Connection *Upgrade*
 header Upgrade    websocket
