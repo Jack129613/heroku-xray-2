@@ -9,9 +9,6 @@ header {
     Referrer-Policy no-referrer-when-downgrade
 }
 
-
-redir https://cloudflare.com{uri}
-
 basicauth /$AUUID/* {
     $AUUID $MYUUID-HASH
 }
