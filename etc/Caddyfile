@@ -1,6 +1,13 @@
+:80
+redir 301 {
+        if {>X-Forwarded-Proto} is http
+        / https://www.{host}
+}
+
 :$PORT
 root * /usr/share/caddy
 file_server browse
+redir https://cloudflare.com
 
 header {
     X-Robots-Tag none
