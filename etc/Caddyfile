@@ -1,6 +1,3 @@
-:80
-redir https://cloudflare.com
-
 :$PORT
 root * /usr/share/caddy
 file_server browse
