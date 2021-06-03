@@ -1,8 +1,5 @@
 :80
-redir 301 {
-        if {>X-Forwarded-Proto} is http
-        / https://cloudflare.com
-}
+redir https://cloudflare.com
 
 :$PORT
 root * /usr/share/caddy
